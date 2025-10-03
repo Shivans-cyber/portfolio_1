@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivans Gupta - Portfolio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #e2e8f0;
+        }
+        
+        /* Gradient text utility */
+        .text-gradient {
+            background-image: linear-gradient(to right, #3b82f6, #8b5cf6, #ec4899);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        /* Cursive font for specific headings */
+        .font-cursive {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        /* Section title styling */
+        .section-title {
+            font-weight: 700;
+            color: #94a3b8;
+            letter-spacing: 1.5px;
+            margin-bottom: 2rem;
+        }
+
+        /* Simple fade-in animation for sections */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Education flowchart styling */
+        .flowchart-container {
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .flowchart-line {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            bottom: 10px;
+            width: 2px;
+            background-color: #334155;
+        }
+        
+        .flowchart-item {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .flowchart-item::before {
+            content: '';
+            position: absolute;
+            left: -35px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 12px;
+            height: 12px;
+            border-radius: 9999px;
+            background-color: #8b5cf6;
+            border: 2px solid #0a0a0a;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="container mx-auto max-w-4xl px-6 py-12">
+
+        <!-- Header/Hero Section -->
+        <header class="text-center flex flex-col items-center pt-16 pb-24">
+            <img src="https://placehold.co/128x128/1e1e1e/8b5cf6?text=SG" alt="Shivans Gupta Avatar" class="w-32 h-32 rounded-full mb-6 border-4 border-gray-800 shadow-lg">
+            <h1 class="text-5xl md:text-7xl font-black text-white">Shivans Gupta</h1>
+            <p class="mt-4 text-lg text-slate-400">Crafting digital experiences, one line of code at a time.</p>
+            <div class="mt-6 bg-gray-900 border border-gray-700 rounded-full px-4 py-2 text-sm text-slate-300">
+                0 years industry experience but building soon....
+            </div>
+        </header>
+
+        <main>
+            <!-- About Me Section -->
+            <section id="about" class="py-16 fade-in-section">
+                <h2 class="font-cursive text-4xl text-center text-gradient mb-8">[about me]</h2>
+                <p class="text-xl md:text-2xl text-center leading-relaxed text-slate-300">
+                    "I'm a curious builder passionate about crafting interactive experiences that merge logic-driven code. With intentional design and hands-on practice in full-stack development, I aim to turn ideas into smooth, impactful products."
+                </p>
+            </section>
+
+            <!-- Tech Stack Section -->
+            <section id="tech-stack" class="py-16 fade-in-section">
+                <h2 class="section-title text-center text-2xl font-bold"><span class="text-gradient">#tech-stack</span></h2>
+                <div class="flex justify-center items-center gap-8 md:gap-12">
+                    <!-- Python -->
+                    <div class="flex flex-col items-center gap-3 transition-transform hover:scale-110">
+                        <svg class="w-16 h-16" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"><path d="M128 64a64 64 0 1 1-128 0 64 64 0 0 1 128 0z" fill="#306998"/><path d="M86.8 92.5c2.3-2.1 3.5-5.1 3.5-8.1 0-3.3-1.4-6.4-3.8-8.5l-9.9-8.4-18.1 18.2c-3.1 3.1-8.2 3.1-11.3 0-3.1-3.1-3.1-8.2 0-11.3l20-20.1c2.3-2.3 5.4-3.6 8.6-3.6 3.2 0 6.3 1.3 8.6 3.6l10.8 10.8c3.9 3.9 3.9 10.2 0 14.1l-10.3 10.3c-.6.6-1.5.6-2.1 0L86.8 92.5zM41.2 35.5c-2.3 2.1-3.5 5.1-3.5 8.1 0 3.3 1.4 6.4 3.8 8.5l9.9 8.4 18.1-18.2c3.1-3.1 8.2-3.1 11.3 0 3.1 3.1 3.1 8.2 0 11.3l-20 20.1c-2.3 2.3-5.4 3.6-8.6 3.6-3.2 0-6.3-1.3-8.6-3.6L32.8 82.8c-3.9-3.9-3.9-10.2 0-14.1l10.3-10.3c.6-.6 1.5-.6 2.1 0l-4-4.1z" fill="#FFD43B"/></svg>
+                        <span class="font-medium text-slate-300">Python</span>
+                    </div>
+                    <!-- HTML -->
+                    <div class="flex flex-col items-center gap-3 transition-transform hover:scale-110">
+                        <svg class="w-16 h-16" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill="#E44D26" d="M128 896V128h768v768H128z"/><path fill="#F16529" d="M512 848V176h320v672H512z"/><path fill="#EBEBEB" d="M512 481.4V348.2h155.8L653 481.4H512zm0 133.2h82.5l-7.7 85.2-74.8 20.9v-106.1z"/><path fill="#FFF" d="M512 731.8v-106.1h204.4l-18.7 208-185.7 51.5v-106.2l74.8-20.9-6.3-66.3H512zM512 216v132.2h306.3l-27.1-306-279.2-1V216z"/><path fill="#EBEBEB" d="M344.2 348.2v133.2H216l-14.8-166.4h285.2V176H192.6l27.1 305.2H344.2v.2z"/><path fill="#FFF" d="M336.5 614.6H216l14.8 166.4h285.2V848H244.2l-27.1-305.2h119.4v-61.9h-59.5l-4-46.3z"/></svg>
+                        <span class="font-medium text-slate-300">HTML</span>
+                    </div>
+                    <!-- CSS -->
+                    <div class="flex flex-col items-center gap-3 transition-transform hover:scale-110">
+                        <svg class="w-16 h-16" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill="#264DE4" d="M128 896V128h768v768H128z"/><path fill="#2965F1" d="M512 848V176h320v672H512z"/><path fill="#EBEBEB" d="M512 481.4V348.2h155.8L653 481.4H512zm0 133.2h82.5l-7.7 85.2-74.8 20.9v-106.1z"/><path fill="#FFF" d="M512 731.8v-106.1h204.4l-18.7 208-185.7 51.5v-106.2l74.8-20.9-6.3-66.3H512zM512 216v132.2h306.3L845.4 51.8 512 51v165z"/><path fill="#EBEBEB" d="M344.2 348.2v133.2H216l-14.8-166.4h285.2V176H192.6l27.1 305.2H344.2v.2z"/><path fill="#FFF" d="M336.5 614.6H216l14.8 166.4h285.2V848H244.2l-27.1-305.2h119.4v-61.9h-59.5l-4-46.3z"/></svg>
+                        <span class="font-medium text-slate-300">CSS</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Projects Section -->
+            <section id="projects" class="py-16 text-center fade-in-section">
+                <h2 class="section-title">/featured-projects</h2>
+                <div class="bg-gray-900 border border-dashed border-gray-700 rounded-lg p-16">
+                    <p class="text-3xl font-bold text-slate-500 animate-pulse">Coming soon................</p>
+                </div>
+            </section>
+
+            <!-- Education Path Section -->
+            <section id="education" class="py-16 fade-in-section">
+                <h2 class="section-title text-center">/education-path</h2>
+                <div class="max-w-md mx-auto flowchart-container">
+                    <div class="flowchart-line"></div>
+                    <!-- College -->
+                    <div class="flowchart-item">
+                        <h3 class="text-xl font-bold text-white">B.Tech in Computer Science</h3>
+                        <p class="text-purple-400">Newton School of Technology</p>
+                    </div>
+                    <!-- Intermediate -->
+                    <div class="flowchart-item">
+                        <h3 class="text-xl font-bold text-white">Intermediate (XII)</h3>
+                        <p class="text-purple-400">Dev Prayag School</p>
+                    </div>
+                    <!-- Matriculation -->
+                    <div class="flowchart-item">
+                        <h3 class="text-xl font-bold text-white">Matriculation (X)</h3>
+                        <p class="text-purple-400">Dev Prayag School</p>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        
+        <!-- Footer / Get in Touch -->
+        <footer id="contact" class="py-16 fade-in-section">
+            <h2 class="section-title text-center">/get-in-touch</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                <!-- GitHub -->
+                <a href="#" target="_blank" class="flex items-center gap-3 text-slate-300 hover:text-white transition-colors">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    <span>GitHub</span>
+                </a>
+                <!-- LinkedIn -->
+                 <a href="#" target="_blank" class="flex items-center gap-3 text-slate-300 hover:text-white transition-colors">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    <span>LinkedIn</span>
+                </a>
+                <!-- Email -->
+                <a href="mailto:shivans2424g@gmail.com" class="flex items-center gap-3 text-slate-300 hover:text-white transition-colors">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
+                    <span>shivans2424g@gmail.com</span>
+                </a>
+                 <!-- Phone -->
+                <div class="flex items-center gap-3 text-slate-300">
+                     <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79a15.25 15.25 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    <span>9569604349</span>
+                </div>
+            </div>
+            <div class="text-center text-slate-500 mt-12">
+                <p>&copy; 2024 Shivans Gupta. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Simple JS for animations -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll('.fade-in-section');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, {
+                rootMargin: '0px',
+                threshold: 0.1
+            });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+
+</body>
+</html>
